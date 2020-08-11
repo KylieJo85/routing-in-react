@@ -1,3 +1,7 @@
+// I would like to thank https://codewithstupid.com/react-router-with-switch-and-link/ for the reference material to help me with my switch and BrowserRouter tags. I also wanted to thank Davy and Eric for their demos and to https://reactrouter.com/web/example/url-params for their reference materials as well. Also to you to Jon for helping me with the Switch and geting rid of that pesky comma that was floating around.//
+
+
+
 import React from 'react';
 import { Route } from 'react-router-dom';
 import {  BrowserRouter, Switch } from 'react-router-dom';
