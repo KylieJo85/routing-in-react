@@ -1,12 +1,14 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import {  BrowserRouter, Switch, Link } from 'react-router-dom';
+import {  BrowserRouter, Switch } from 'react-router-dom';
 
 import './App.css';
+
 import Contact from './components/contact/Contact';
 import Welcome from './components/welcome/Welcome';
 import Clock from './components/welcome/clock/Clock';
 import Navigation from './components/navigation/Navigation';
+import Error from './components/error/Error';
 
 
 function App() {
@@ -43,6 +45,12 @@ function App() {
             path="/contact"
             component={Contact}
           />
+
+          <Route
+          component={Error}
+          />
+
+
         </Switch>
 
       </BrowserRouter>
