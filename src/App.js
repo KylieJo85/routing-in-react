@@ -4,7 +4,7 @@
 
 import React from 'react';
 import { Route } from 'react-router-dom';
-import {  BrowserRouter, Switch } from 'react-router-dom';
+import { BrowserRouter, Switch } from 'react-router-dom';
 
 import './App.css';
 
@@ -13,6 +13,7 @@ import Welcome from './components/welcome/Welcome';
 import Clock from './components/welcome/clock/Clock';
 import Navigation from './components/navigation/Navigation';
 import Error from './components/error/Error';
+import Jeopardy from './components/jeopardy/Jeopardy';
 
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
 
       <BrowserRouter>
 
-          <Navigation />
+        <Navigation />
 
         <Switch>
 
@@ -33,25 +34,31 @@ function App() {
           />
 
           <Route
-            
+
             path="/welcome/:name"
             component={Welcome}
           />
 
           <Route
-            
+
             path="/clock"
             component={Clock}
           />
 
           <Route
-            
+
             path="/contact"
             component={Contact}
           />
 
           <Route
-          component={Error}
+
+            path="/jeopardy"
+            component={Jeopardy}
+          />
+
+          <Route
+            component={Error}
           />
 
 
